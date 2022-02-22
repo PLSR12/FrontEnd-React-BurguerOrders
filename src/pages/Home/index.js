@@ -22,7 +22,7 @@ function Home() {
   const inputAdress = useRef();
 
   async function addNewOrder() {
-    const { data: newOrder } = await axios.post("http://localhost:3000/orders", {
+    const { data: newOrder } = await axios.post("http://localhost:3001/orders", {
       nameClient: inputName.current.value,
       order: inputOrder.current.value,
       adressClient: inputAdress.current.value,
