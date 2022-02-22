@@ -23,7 +23,7 @@ function Orders() {
 
     useEffect(() => {
       async function fetchOrders() {
-      const {data : newOrder } = await axios.get("https://git.heroku.com/backend-orders.git/orders");
+      const {data : newOrder } = await axios.get("https://backend-orders.herokuapp.com/orders");
       
       setOrders(newOrder);
     }
@@ -32,7 +32,7 @@ function Orders() {
     },[])
 
     async function deleteUser(clientId) {
-        await axios.delete(`https://git.heroku.com/backend-orders.git/orders/${clientId}`);
+        await axios.delete(`https://backend-orders.herokuapp.com/orders/${clientId}`);
 
     const newOrders = orders.filter((client) => client.id !== clientId);
 
