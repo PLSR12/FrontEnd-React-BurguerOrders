@@ -22,7 +22,7 @@ function Home() {
   const inputAdress = useRef();
 
   async function addNewOrder() {
-    const { data: newOrder } = await axios.post("https://git.heroku.com/backend-orders.git/orders", {
+    const { data: newOrder } = await axios.post("https://git.heroku.com/backend-orders.git", {
       nameClient: inputName.current.value,
       order: inputOrder.current.value,
       adressClient: inputAdress.current.value,
