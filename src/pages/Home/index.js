@@ -35,7 +35,7 @@ function Home() {
     setOrders([...orders, newOrder]); 
 
     navigate("/finalizado")
-  }
+  };
 
   return (
     <Container>
