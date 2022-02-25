@@ -26,7 +26,7 @@ function Home() {
   async function addNewOrder() {
     const { data: newOrder } = await axios.post("https://backend-orders.herokuapp.com/orders", {
       nameClient: inputName.current.value,
-      nameContact: inputContact.current.value,
+      clientContact: inputContact.current.value,
       order: inputOrder.current.value,
       adressClient: inputAdress.current.value,
       paymentForm: inputPayment.current.value

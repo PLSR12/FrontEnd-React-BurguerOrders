@@ -55,7 +55,7 @@ function Orders() {
               <div>
               <p>{client.nameClient}</p>
 
-             <p>{client.nameContact}</p>
+             <p>{client.clientContact}</p>
 
               <p>{client.order}</p>
 
