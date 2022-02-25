@@ -20,7 +20,7 @@ export const H1 = styled.h1`
   font-weight: bold;
   font-size: 24px;
   line-height: 33px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   text-align: center;
   color: #ffff;
 `;
@@ -34,6 +34,8 @@ export const InputLabel = styled.p`
 
   display: flex;
   align-items: center;
+  margin-top:25px;
+
   color: #ffff;
 `;
 
@@ -56,13 +58,13 @@ export const Input = styled.input`
 
   border-radius: 14px;
   margin-bottom:-30px;
-  margin-top:-25px;
+  margin-top:-35px;
 `;
 
 export const Button = styled.button`
   width: 342px;
   height: 74px;
-  margin-top: 50px;
+  margin-top: 70px;
   border: none;
   outline: none;
 
@@ -85,6 +87,7 @@ export const Button = styled.button`
 
   &:hover {
     opacity: 0.8;
+    background-color:green;
   }
   &:active {
     opacity: 0.5;

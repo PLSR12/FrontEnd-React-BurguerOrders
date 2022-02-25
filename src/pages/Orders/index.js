@@ -49,12 +49,25 @@ function Orders() {
         <H1>Pedidos</H1>
 
         <ul>
+          
           {orders.map((client) => (
             <Order key={client.id}>
-              <p>{client.nameClient}</p> <p>{client.order}</p> <p>{client.adressClient}</p>
+              <div>
+              <p>{client.nameClient}</p>
+
+             <p>{client.nameContact}</p>
+
+              <p>{client.order}</p>
+
+              <p>{client.adressClient}</p>
+
+              <p>{client.paymentForm}</p>
+                </div>
+
               <button onClick={() => deleteUser(client.id)} >
                 <img src={Trasher} alt="Lixeira" />
               </button>
+
             </Order>
           ))}
         </ul>

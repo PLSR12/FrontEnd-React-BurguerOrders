@@ -18,34 +18,44 @@ function Home() {
   const navigate = useNavigate();
 
   const inputName = useRef();
+  const inputContact = useRef();
   const inputOrder = useRef();
   const inputAdress = useRef();
+  const inputPayment = useRef();
 
   async function addNewOrder() {
     const { data: newOrder } = await axios.post("https://backend-orders.herokuapp.com/orders", {
       nameClient: inputName.current.value,
+      nameContact: inputContact.current.value,
       order: inputOrder.current.value,
       adressClient: inputAdress.current.value,
+      paymentForm: inputPayment.current.value
     });
 
     setOrders([...orders, newOrder]); 
 
-    navigate("/pedidos")
+    navigate("/finalizado")
   }
 
   return (
     <Container>
       <Image src={Logo} alt="logo" />
-      <H1>Faça seu pedido!</H1>
+      <H1>FAÇA SEU PEDIDO !</H1>
 
       <InputLabel> Nome: </InputLabel>
-      <Input ref={inputName} placeholder="Nome" required />
+      <Input ref={inputName} placeholder="Ex: João" required />
+
+      <InputLabel> Telefone: </InputLabel>
+      <Input ref={inputContact} placeholder="Ex: 21 987654321" required />
 
       <InputLabel> Pedido: </InputLabel>
-      <Input ref={inputOrder} placeholder="Pedido" required />
+      <Input ref={inputOrder} placeholder="Ex: X-tudo..." required />
 
       <InputLabel> Endereço: </InputLabel>
-      <Input ref={inputAdress} placeholder="Endereço" required />
+      <Input ref={inputAdress} placeholder="Ex: R.dos bobos n12..." required />
+
+      <InputLabel> Forma de Pagamento: </InputLabel>
+      <Input ref={inputPayment} placeholder="Ex: Dinheiro, Débito, Crédito..." required />
 
       <Button onClick={(addNewOrder)} >
          Finalizar Pedido
