@@ -1,7 +1,5 @@
 import React from "react";
 
-import { useNavigate } from "react-router-dom";
-
 import Logo from "../../assets/burger 1.png" ;
 
 import whatsapp from "../../assets/whatsapp-circle-1868968-1583132.png";
@@ -14,9 +12,6 @@ import {
 } from "./styles.js";
 
 function congrats() {
-
-     function goWhatsApp() {
-     }
 
     return (
     <Container>
