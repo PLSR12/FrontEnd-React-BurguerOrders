@@ -43,10 +43,10 @@ function Home() {
       <H1>FAÇA SEU PEDIDO !</H1>
 
       <InputLabel> Nome: </InputLabel>
-      <Input ref={inputName} placeholder="Ex: João" required />
+      <Input type="text" ref={inputName} placeholder="Ex: João" required />
 
       <InputLabel> Telefone: </InputLabel>
-      <Input ref={inputContact} placeholder="Ex: 21 987654321" required />
+      <Input type="tel" ref={inputContact} placeholder="Ex: 21 987654321" required />
 
       <InputLabel> Pedido: </InputLabel>
       <Input ref={inputOrder} placeholder="Ex: X-tudo..." required />
