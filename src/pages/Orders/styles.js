@@ -7,7 +7,8 @@ export const Container = styled.div `
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  min-height: 100vh;
+  width:110%;
+  min-height: 120vh;
 `;
 
 export const Image = styled.img`
