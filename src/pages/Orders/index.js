@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import { useNavigate } from "react-router-dom";
-
 import axios from "axios";
 
 import BagOrders from "../../assets/burger (1) 1.png";
@@ -13,13 +11,11 @@ import{
     Image,
     H1,
     Order,
-    Button
 } from "./styles"
 
 
 function Orders() {
     const [orders, setOrders] = useState([]);
-    const navigate = useNavigate();
 
     useEffect(() => {
       async function fetchOrders() {
@@ -38,10 +34,6 @@ function Orders() {
 
     setOrders(newOrders);
    }
-
-    function backtoHome() {
-        navigate("/")
-     }
 
   return (
     <Container>
@@ -71,9 +63,6 @@ function Orders() {
             </Order>
           ))}
         </ul>
-
-        <Button onClick={(backtoHome)} > Voltar   </Button>
-
     </Container>
   );
 }

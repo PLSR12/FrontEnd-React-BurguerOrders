@@ -7,7 +7,7 @@ export const Container = styled.div `
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  min-height: 90vh;
+  min-height: 100vh;
 `;
 
 export const Image = styled.img`
@@ -66,35 +66,3 @@ export const Order = styled.li`
     cursor: pointer;
   }
 `;
-
-export const Button = styled.button `
-  width: 342px;
-  height: 68px;
-  margin-top: 50px;
-  margin-bottom:30px;
-
-  border: none;
-  outline: none;
-  cursor: pointer;
-
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 28px;
-
-  background: rgba(255, 255, 255, 0.14);
-  color: #ffff;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-
-  &:hover {
-    opacity: 0.8;
-  }
-  &:active {
-    opacity: 0.5;
-  }
-`;
-

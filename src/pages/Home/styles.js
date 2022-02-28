@@ -18,9 +18,9 @@ export const Image = styled.img`
 export const H1 = styled.h1`
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 33px;
-  margin-bottom: 30px;
+  font-size: 30px;
+  line-height: 20px;
+  margin-bottom: 10px;
   text-align: center;
   color: #ffff;
 `;
@@ -28,8 +28,8 @@ export const H1 = styled.h1`
 export const InputLabel = styled.p`
   letter-spacing: -0.4px;
   font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
+  font-weight: normal;
+  font-size: 18px;
   line-height: 22px;
 
   display: flex;
