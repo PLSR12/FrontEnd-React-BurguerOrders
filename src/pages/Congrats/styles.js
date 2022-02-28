@@ -8,7 +8,7 @@ export const Container = styled.div`
   align-items: center;
 
   min-height: 120vh;
-  width:100%;
+  width:110%;
 `;
 
 export const Image = styled.img `
@@ -21,12 +21,13 @@ export const WhatsApp = styled.img`
 `;
 
 export const H1 = styled.h1`
+  position:flex;
   flex-direction:column;
   flex-wrap:wrap;
   margin-top:90px;
   font-style: normal;
   font-weight: bold;
-  font-size: 54px;
+  font-size: 44px;
   text-align:center;
   color: #ffff;
 `;
