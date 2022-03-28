@@ -19,8 +19,7 @@
 
 
 ## :house: About the project
-
-Project done at an academic level.
+Projeto em React consumindo API propria, utilizando styled-components, hooks, useState, useContext,useEffect. E Axios para contato com BackEnd.
 <br>
 
 ## :computer: Technologies
